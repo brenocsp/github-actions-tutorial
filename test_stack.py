@@ -10,20 +10,20 @@ class TestStack(unittest.TestCase):
     self.assertTrue(self.stack.is_empty())
 
   def testNotEmptyStack(self):
-    self.stack.push(10)
+    self.stack.push(1)
     self.assertFalse(self.stack.is_empty())
 
   def testSizeStack(self):
-    self.stack.push(10)
-    self.stack.push(20)
-    self.stack.push(30)
+    self.stack.push(1)
+    self.stack.push(2)
+    self.stack.push(3)
     size = self.stack.size
     self.assertEqual(3, size)
 
   def testPushPopStack(self):
-    self.stack.push(10)
-    self.stack.push(20)
-    self.stack.push(30)
+    self.stack.push(1)
+    self.stack.push(2)
+    self.stack.push(3)
     self.stack.pop()
     result = self.stack.pop()
     self.assertEqual(20, result)
