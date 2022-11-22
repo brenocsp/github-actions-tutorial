@@ -26,7 +26,7 @@ class TestStack(unittest.TestCase):
     self.stack.push(3)
     self.stack.pop()
     result = self.stack.pop()
-    self.assertEqual(20, result)
+    self.assertEqual(2, result)
 
   def testEmptyStackException(self):
     self.stack.push(10)
